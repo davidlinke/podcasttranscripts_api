@@ -8,8 +8,8 @@ class CreatePodcasts < ActiveRecord::Migration[6.0]
       t.string :image_url
       t.timestamp :last_updated
       t.integer :added_by_user
-      t.boolean: premium_podcast
-      t.string: ignore_keywords
+      t.boolean :premium_podcast
+      t.string :ignore_keywords
 
       t.timestamps
     end
