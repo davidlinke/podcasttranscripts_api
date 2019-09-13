@@ -11,6 +11,7 @@ module Types
     field :transcript, String, null: true
     field :transcript_added_date, String, null: true
     field :transcript_added_by_user_id, Integer, null: true
+    field :episode_added_by_user_id, Integer, null: true
     field :created_at, String, null: true
     field :updated_at, String, null: true
   end

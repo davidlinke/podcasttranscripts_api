@@ -2,7 +2,7 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 
 User.create([
-  { email: 'admin@podcasts.com', password: 'mysecret', admin: true },
+  { email: 'a@a.com', password: 'aaaaaa', admin: true },
   { email: 'david@david.com', password: 'no', admin: false },
   { email: 'friend@gmail.com', password: 'something', admin: false },
   { email: 'help@podcasts.com', password: 'unique', admin: false },

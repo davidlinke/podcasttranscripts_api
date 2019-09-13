@@ -10,6 +10,7 @@ class CreateEpisodes < ActiveRecord::Migration[6.0]
       t.string :transcript
       t.timestamp :transcript_added_date
       t.integer :transcript_added_by_user_id
+      t.integer :episode_added_by_user_id
 
       t.timestamps
     end

@@ -19,13 +19,13 @@ ActiveRecord::Schema.define(version: 2019_09_10_140827) do
     t.integer "podcast_id"
     t.string "title"
     t.datetime "published_date"
-    t.string "image_url"
     t.string "description"
     t.string "audio_url"
     t.integer "duration"
     t.string "transcript"
     t.datetime "transcript_added_date"
     t.integer "transcript_added_by_user_id"
+    t.integer "episode_added_by_user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

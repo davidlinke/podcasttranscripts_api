@@ -4,5 +4,8 @@ module Types
     field :add_podcast, mutation: Mutations::AddPodcast
     field :update_podcast_episodes, mutation: Mutations::UpdatePodcastEpisodes
     field :add_episode_transcript, mutation: Mutations::AddEpisodeTranscript
+    field :remove_podcast_episode, mutation: Mutations::RemovePodcastEpisode
+    field :edit_podcast_episode, mutation: Mutations::EditPodcastEpisode
+    field :add_podcast_episode, mutation: Mutations::AddPodcastEpisode
   end
 end
