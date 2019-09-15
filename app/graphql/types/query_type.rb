@@ -32,5 +32,14 @@ module Types
       Podcast.find(id)
     end
 
+    # EPISODES
+    field :episode, Types::EpisodeType, null:false do
+      argument :id, ID, required: true
+    end
+
+    def episode(id:)
+      Episode.find(id)
+    end
+
   end
 end
