@@ -1,6 +1,7 @@
 require 'rss'
 require 'open-uri'
 require 'date'
+require 'sanitize'
 
 class Mutations::UpdatePodcastEpisodes < Mutations::BaseMutation
     argument :podcast_id, ID, required: true
@@ -20,7 +21,7 @@ class Mutations::UpdatePodcastEpisodes < Mutations::BaseMutation
                         podcast_id: foundPodcast.id,
                         title: ep.title,
                         published_date: ep.pubDate,
-                        description: ep.description.gsub("\n", "").strip,
+                        description: Sanitize.fragment(ep.description).strip,
                         audio_url: ep.enclosure.url,
                         duration: ep.enclosure.length
                         )
