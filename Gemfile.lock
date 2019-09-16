@@ -139,6 +139,10 @@ GEM
       crass (~> 1.0.2)
       nokogiri (>= 1.8.0)
       nokogumbo (~> 2.0)
+    search_object (1.2.2)
+    search_object_graphql (0.2)
+      graphql (~> 1.8)
+      search_object (~> 1.2.2)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -176,6 +180,8 @@ DEPENDENCIES
   rails (~> 6.0.0)
   rss
   sanitize
+  search_object
+  search_object_graphql
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data

@@ -10,6 +10,10 @@ gem 'rss'
 gem 'graphql'
 gem 'graphiql-rails'
 
+# GraphQL Advanced Searching
+gem 'search_object'
+gem 'search_object_graphql'
+
 # Seed data generator
 gem 'faker'
 
