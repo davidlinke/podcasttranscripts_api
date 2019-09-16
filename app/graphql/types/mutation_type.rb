@@ -7,5 +7,6 @@ module Types
     field :remove_podcast_episode, mutation: Mutations::RemovePodcastEpisode
     field :edit_podcast_episode, mutation: Mutations::EditPodcastEpisode
     field :add_podcast_episode, mutation: Mutations::AddPodcastEpisode
+    field :remove_podcast, mutation: Mutations::RemovePodcast
   end
 end
