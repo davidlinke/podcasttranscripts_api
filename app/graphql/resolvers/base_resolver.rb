@@ -1,5 +1,3 @@
-require 'search_object/plugin/graphql'
-
 module Resolvers
     class BaseResolver
       include SearchObject.module(:graphql)

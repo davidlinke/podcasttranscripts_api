@@ -41,7 +41,7 @@ module Types
       Episode.find(id)
     end
 
-    field :episodesFiltered, resolver: Resolvers::TranscriptsSearch
+    field :episodes, resolver: Resolvers::TranscriptsSearch
 
   end
 end
