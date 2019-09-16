@@ -21,7 +21,7 @@ class Mutations::UpdatePodcastEpisodes < Mutations::BaseMutation
                         podcast_id: foundPodcast.id,
                         title: ep.title,
                         published_date: ep.pubDate,
-                        description: Sanitize.fragment(ep.description).strip,
+                        description: Sanitize.fragment(ep.description).strip.gsub("&nbsp;", " ").gsub("&amp;", "&"),
                         audio_url: ep.enclosure.url,
                         duration: ep.enclosure.length
                         )

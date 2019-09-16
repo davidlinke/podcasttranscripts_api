@@ -20,7 +20,7 @@ class Mutations::AddPodcast < Mutations::BaseMutation
                     title: feed.channel.title,
                     rss_url: rss_url,
                     web_url: feed.channel.link,
-                    description: Sanitize.fragment(feed.channel.description).strip,
+                    description: Sanitize.fragment(feed.channel.description).strip.gsub("&nbsp;", " ").gsub("&amp;", "&"),
                     image_url: feed.channel.image.url,
                     added_by_user: added_by_user,
                     premium_podcast: premium_podcast,
