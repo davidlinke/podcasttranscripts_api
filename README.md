@@ -1,24 +1,14 @@
-# README
+# PodDialogue
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A rails backend for the [PodDialogue](https://poddialogue.com) website.
 
-Things you may want to cover:
+[https://poddialogue.com](https://poddialogue.com)
 
-* Ruby version
+The frontend repo for this can be found [here](https://github.com/davidlinke/podcasttranscripts_frontend).
 
-* System dependencies
+## Technologies, Frameworks, and Libraries
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Rails
+- GraphQL
+- RSS
+- PostgreSQL
