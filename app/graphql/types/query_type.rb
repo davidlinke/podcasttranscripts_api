@@ -41,7 +41,25 @@ module Types
       Episode.find(id)
     end
 
-    # field :episodes, resolver: Resolvers::TranscriptsSearch
+    field :episodes, [Types::EpisodeType], null:false do
+      argument :podcast_id, ID, required: true
+      argument :transcript_filter, String, required: false
+    end
 
+    def episodes(podcast_id:, transcript_filter:)
+
+      def escape_search_term(term)
+        "%#{term.gsub(/\s+/, '%')}%"
+      end
+
+      eps = Episode.where(podcast_id: podcast_id)
+
+      if transcript_filter != "" then
+        eps = eps.where(["LOWER(transcript) LIKE LOWER(?)", escape_search_term(transcript_filter)])
+      end
+      
+      eps
+    end
+    
   end
 end
